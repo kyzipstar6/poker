@@ -1,0 +1,51 @@
+.root { -fx-font-family: 'Segoe UI'; -fx-background-color: #101916; -fx-text-fill: #f0efe8; }
+.app-shell { -fx-background-color: #101916; }
+.top-bar { -fx-background-color: #18221e; -fx-border-color: #33413b; -fx-border-width: 0 0 1 0; }
+.brand-mark { -fx-background-color: #d3b878; -fx-text-fill: #14221d; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 26px; -fx-font-weight: 700; -fx-alignment: center; -fx-min-width: 38px; -fx-min-height: 38px; -fx-background-radius: 2; }
+.brand-name { -fx-text-fill: #f3f0e6; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 20px; -fx-font-weight: 700; }
+.brand-caption, .eyebrow, .section-title, .stat-key, .dock-label { -fx-text-fill: #9ca89f; -fx-font-size: 10px; -fx-font-weight: 700; }
+.brand-caption, .eyebrow { -fx-text-fill: #cfb777; -fx-font-size: 9px; }
+.header-event { -fx-text-fill: #f0efe8; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 20px; -fx-font-weight: 600; }
+.live-indicator { -fx-background-color: #a34338; -fx-text-fill: #fff7ed; -fx-font-size: 9px; -fx-font-weight: 700; -fx-padding: 5 8; -fx-background-radius: 2; }
+.header-meta { -fx-text-fill: #bcc5be; -fx-font-size: 10px; -fx-font-weight: 600; }
+.main-area { -fx-background-color: #101916; }
+.left-rail { -fx-padding: 4 18 0 0; -fx-border-color: transparent #33413b transparent transparent; -fx-border-width: 0 1 0 0; }
+.rail-section { -fx-padding: 0 0 17 0; -fx-border-color: transparent transparent #293630 transparent; -fx-border-width: 0 0 1 0; }
+.section-title { -fx-text-fill: #cfb777; -fx-font-size: 10px; }
+.stat-key { -fx-font-size: 9px; -fx-text-fill: #859188; }
+.stat-value { -fx-text-fill: #e8e8dd; -fx-font-size: 12px; -fx-font-weight: 600; }
+.rail-note { -fx-text-fill: #748279; -fx-font-size: 9px; -fx-line-spacing: 4px; }
+.payout-list { -fx-text-fill: #d9ddd4; -fx-font-size: 11px; -fx-line-spacing: 8px; -fx-font-weight: 500; }
+.opponent-rail { -fx-padding: 5 0 0 0; }
+.section-count { -fx-text-fill: #829188; -fx-font-size: 9px; }
+.opponent-row { -fx-padding: 8 6; -fx-border-color: transparent transparent #26322c transparent; -fx-border-width: 0 0 1 0; }
+.opponent-avatar { -fx-background-color: #2f4139; -fx-text-fill: #d4bd81; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 15px; -fx-alignment: center; -fx-min-width: 32px; -fx-min-height: 32px; -fx-background-radius: 16; }
+.opponent-name { -fx-text-fill: #e0e4dc; -fx-font-size: 11px; -fx-font-weight: 600; }
+.opponent-stack { -fx-text-fill: #8f9c92; -fx-font-size: 10px; }
+.table-area { -fx-background-color: transparent; }
+.felt { -fx-fill: #155647; -fx-stroke: #a7844e; -fx-stroke-width: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.55), 24, 0.18, 0, 12); }
+.table-name { -fx-text-fill: #9fc3b2; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 11px; -fx-font-weight: 700; }
+.pot-caption { -fx-text-fill: #b5c9bd; -fx-font-size: 9px; -fx-font-weight: 700; }
+.pot-amount { -fx-text-fill: #f2d489; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 22px; -fx-font-weight: 700; }
+.table-action { -fx-text-fill: #a6beb0; -fx-font-size: 9px; -fx-font-weight: 700; }
+.seat { -fx-background-color: rgba(20,32,27,0.94); -fx-border-color: #788b78; -fx-border-width: 1; -fx-background-radius: 4; -fx-border-radius: 4; -fx-padding: 7 8; }
+.seat-name { -fx-text-fill: #e8ece4; -fx-font-size: 10px; -fx-font-weight: 600; }
+.seat-stack { -fx-text-fill: #d6bd7d; -fx-font-size: 10px; }
+.playing-card { -fx-background-color: #f4f0e5; -fx-text-fill: #242722; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 22px; -fx-font-weight: 700; -fx-alignment: center; -fx-min-width: 54px; -fx-min-height: 76px; -fx-background-radius: 4; -fx-border-color: #d4d0c5; -fx-border-width: 1; -fx-border-radius: 4; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.26),8,0.1,0,3); }
+.red-card { -fx-text-fill: #a53c35; }
+.card-back { -fx-background-color: #b7a46c; -fx-text-fill: #f5edcf; -fx-border-color: #e0d3a5; }
+.card-slot { -fx-background-color: rgba(11,49,40,0.42); -fx-border-color: rgba(208,222,211,0.25); -fx-border-width: 1; -fx-border-radius: 4; -fx-background-radius: 4; -fx-min-width: 54px; -fx-min-height: 76px; }
+.hero-stack { -fx-text-fill: #f0d287; -fx-font-size: 12px; -fx-font-weight: 700; }
+.hero-name { -fx-text-fill: #d4e2d8; -fx-font-size: 9px; -fx-font-weight: 700; }
+.action-dock { -fx-background-color: #18221e; -fx-border-color: #33413b transparent transparent transparent; -fx-border-width: 1 0 0 0; }
+.dock-label { -fx-text-fill: #9ba89f; }
+.status-message { -fx-text-fill: #e0e5dc; -fx-font-size: 12px; }
+.raise-amount { -fx-text-fill: #f0d287; -fx-font-family: 'Bahnschrift SemiCondensed'; -fx-font-size: 17px; -fx-min-width: 48px; -fx-alignment: center-right; }
+.slider .track { -fx-background-color: #35463d; -fx-pref-height: 4px; }
+.slider .thumb { -fx-background-color: #d2b878; -fx-pref-width: 13px; -fx-pref-height: 13px; }
+.button { -fx-cursor: hand; -fx-font-size: 10px; -fx-font-weight: 700; -fx-padding: 12 18; -fx-background-radius: 3; -fx-border-radius: 3; }
+.fold-button { -fx-background-color: #27342e; -fx-text-fill: #c3cbc3; -fx-border-color: #435149; -fx-border-width: 1; }
+.secondary-button { -fx-background-color: #d4bd81; -fx-text-fill: #19251f; }
+.primary-button { -fx-background-color: #b4493d; -fx-text-fill: #fff8ed; }
+.button:hover { -fx-effect: dropshadow(gaussian,rgba(219,196,134,0.26),9,0.1,0,0); }
+.button:disabled { -fx-opacity: 0.42; -fx-cursor: default; }
