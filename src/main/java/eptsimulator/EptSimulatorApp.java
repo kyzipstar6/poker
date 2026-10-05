@@ -48,6 +48,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.input.*;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
 import javafx.stage.FileChooser;
@@ -169,12 +170,23 @@ public class EptSimulatorApp extends Application {
         root.setCenter(buildMainArea());
         root.setBottom(buildActionDock());
         Scene scene = new Scene(root, 1200, 700);
+        scene.addEventHandler(KeyEvent.KEY_PRESSED, ev->{
+            if(ev.getCode().equals(KeyCode.F11)){
+                stage.setFullScreen(!stage.getFullScreen());
+            }
+        });
         applyTheme(scene);
         stage.setTitle("EPT Simulator | Tournament Room");
         stage.setMinWidth(1100);
         stage.setMinHeight(760);
         stage.setScene(scene);
         stage.show();
+        try{
+            stage.getIcons().add(new javafx.scene.image.Image("eptsimulator/files/eptlogo.png"));
+        }catch (Exception e) {
+            e.printStackTrace();
+            stage.getIcons().add(new javafx.scene.image.Image("files/eptlogo.png"));
+        }
 
         tournamentClock = new Timeline(new KeyFrame(Duration.seconds(1), event -> tickClock()));
         tournamentClock.setCycleCount(Timeline.INDEFINITE);
@@ -1749,6 +1761,7 @@ public class EptSimulatorApp extends Application {
             int priorBoardCount = renderedBoardCount;
             int priorHoleCardCount = renderedHoleCardCount;
             potAmount.setText(formatChips(localView ? pot : viewedTable.pot));
+            seats.forEach(SeatView::refresh); layoutTable();
             tableAction.setText(localView ? (handOver ? "WAITING FOR NEXT HAND" : actionPrompt)
                     : "TABLE " + viewedTable.number + "  ·  " + viewedTable.lastAction);
             for (int i = 0; i < 5; i++) {
@@ -1778,10 +1791,11 @@ public class EptSimulatorApp extends Application {
             }
             renderedBoardCount = visibleBoard.size();
             renderedHoleCardCount = localView ? heroCards.size() : 0;
+
             holeCards.setVisible(localView); holeCards.setManaged(localView);
             stack.setText(localView ? formatChips(hero.stack) + " CHIPS" : "REMOTE TABLE");
             name.setText(localView ? (hero.stack > 0 ? "YOU  ·  " + heroPosition() : "YOU  ·  ELIMINATED") : "TABLE " + viewedTable.number);
-            seats.forEach(SeatView::refresh); layoutTable();
+            
         }
 
         void showRemoteTable(RemoteTable table) { viewedTable = table; resetCardAnimation(); render(); }
